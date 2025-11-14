@@ -7,7 +7,8 @@
   --ring:rgba(13,110,253,.15);
   --shadow:0 10px 30px rgba(16,24,40,.08);
 }
-html,body{background:var(--bg); color:var(--ink);}
+/* MUDANÇA AQUI: Removido 'color:var(--ink)' para permitir que o Dark Mode controle a cor do texto. */
+html,body{background:var(--bg);}
 a{color:var(--brand); text-decoration:none}
 a:hover{opacity:.9}
 .navbar{box-shadow:var(--shadow)}
