@@ -34,7 +34,7 @@ public class EventosServlet extends HttpServlet {
             return;
         }
 
-        String titulo   = req.getParameter("titulo");
+        String titulo = req.getParameter("titulo");
         String descricao = req.getParameter("descricao");
         String dataHoraStr = req.getParameter("dataHora");
 
@@ -53,9 +53,11 @@ public class EventosServlet extends HttpServlet {
             e.setDescricao(descricao.trim());
             e.setDataHora(dataHora);
 
-            new EventosDAO().inserir(e);
+            EventosDAO dao = new EventosDAO();
+            dao.inserir(e);
 
             resp.sendRedirect("eventos.jsp?ok=1");
+
         } catch (Exception ex) {
             ex.printStackTrace();
             resp.sendRedirect("eventos.jsp?erro=geral");

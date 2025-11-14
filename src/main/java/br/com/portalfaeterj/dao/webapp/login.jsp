@@ -172,9 +172,19 @@
                 </div>
             </form>
 
-            <div class="text-center mt-3">
-                <a href="recuperar_senha.jsp" class="text-muted small">Esqueceu a senha?</a>
-            </div>
+            <div class="mt-3 text-center">
+    <a href="recuperar_senha.jsp" style="font-size: 0.9rem; text-decoration: underline;">
+        Esqueceu a senha?
+    </a>
+</div>
+
+<div class="mt-1 text-center" style="font-size: 0.9rem;">
+    <span>Ainda não tem conta? </span>
+    <a href="cadastro.jsp" style="text-decoration: underline; color: #0d6efd;">
+        Cadastre-se
+    </a>
+</div>
+
 
         </div>
     </div>
